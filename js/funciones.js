@@ -60,7 +60,8 @@ function cargarCarrito(){
                 if(suma!=0){
                     $('#total').html(`<p> TOTAL: $${suma}</p>`);
                 }      
-                $('#listaCompra').append('<div><p class="nombreSuma">' + producto.nombre +'</p> <p> Precio $: ' + producto.precio + '</p><button id="elm'+ i +'" class="btn btn-outline-danger eliminar">Eliminar</button></div>');
+                $('#listaCompra').append('<div id="itemCarrito'+ i +'"><p class="nombreSuma">' + producto.nombre +'</p> <p> Precio $: ' + producto.precio + '</p><button id="elm'+ i +'" class="btn btn-outline-danger eliminar">Eliminar</button></div>');
+                $(`#itemCarrito${i}`).fadeIn();
                 
                 $(`#elm${i}`).click(function(){
                     storedCarrito.splice(producto.posicion,1);

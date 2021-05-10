@@ -16,6 +16,10 @@ h1 {
   background-color: #fffefe;
   width: 200px;
   height: 200px; }
+  .col-md-3 .cantidad {
+    color: green;
+    font-size: 15px;
+    font-weight: bold; }
 
 #compra {
   width: 100%;
@@ -26,29 +30,22 @@ h1 {
   margin: 20px 50px 20px 0;
   position: sticky;
   top: 20px; }
+  #compra #listaCompra > div {
+    width: 60%;
+    display: none;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    margin: 5px;
+    list-style: none;
+    background-color: white;
+    padding: 10px; }
+    #compra #listaCompra > div .btn-danger {
+      width: 20px;
+      font-size: 8px;
+      height: 10px; }
 
 ul {
   text-align: left; }
 
 #total {
   margin-top: 15px; }
-
-.cantidad {
-  color: green;
-  font-size: 15px;
-  font-weight: bold; }
-
-#listaCompra > div {
-  width: 60%;
-  display: inline-block;
-  border: 0.5px solid gray;
-  border-radius: 5px;
-  margin: 5px;
-  list-style: none;
-  background-color: white;
-  padding: 10px; }
-
-.btn-danger {
-  width: 20px;
-  font-size: 8px;
-  height: 10px; }

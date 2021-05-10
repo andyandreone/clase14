@@ -4,6 +4,7 @@ $(document).ready(function(){
     cargarProductos();
     //CARGO LOS PRODUCTOS DEL SESSIONSTORAGE EN EL CARRITO
     cargarCarrito();
+   
 });
 
 
