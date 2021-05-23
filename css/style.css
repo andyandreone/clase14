@@ -1,5 +1,5 @@
 body {
-  background-color: #dcf6f7;
+  background-color: #f8f7ef;
   text-align: center; }
 
 h1 {
@@ -10,16 +10,26 @@ h1 {
   padding: 20px 0;
   text-transform: uppercase; }
 
-.col-md-3 {
-  margin: 5px;
-  border: 2px solid gray;
-  background-color: #fffefe;
-  width: 200px;
-  height: 200px; }
-  .col-md-3 .cantidad {
+.producto {
+  margin: 7px;
+  border: 1px solid #3d3838;
+  background-color: #fffffe;
+  width: 180px;
+  height: 300px; }
+  .producto .nProducto {
+    font-size: 10px; }
+  .producto img {
+    margin: 10px 0; }
+  .producto .precio {
+    color: green;
+    font-size: 25px;
+    font-weight: bold; }
+  .producto .cantidad {
     color: green;
     font-size: 15px;
     font-weight: bold; }
+  .producto:hover {
+    border: 2px solid gray; }
 
 #compra {
   width: 100%;
@@ -30,9 +40,18 @@ h1 {
   margin: 20px 50px 20px 0;
   position: sticky;
   top: 20px; }
+  #compra p {
+    color: #686767; }
+  #compra .ticket {
+    width: 100%; }
+    #compra .ticket input {
+      margin: 10px 0; }
+  #compra .total, #compra .detalle {
+    font-size: 20px;
+    color: black; }
   #compra #listaCompra > div {
     width: 60%;
-    display: none;
+    display: inline-block;
     border: 0.5px solid gray;
     border-radius: 5px;
     margin: 5px;
@@ -49,3 +68,9 @@ ul {
 
 #total {
   margin-top: 15px; }
+
+.ticket {
+  width: 50%;
+  display: inline-block;
+  height: 300px;
+  background-color: white; }
